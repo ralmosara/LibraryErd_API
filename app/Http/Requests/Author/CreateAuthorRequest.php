@@ -11,7 +11,7 @@ class CreateAuthorRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,8 @@ class CreateAuthorRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'first_name' => 'required',
+            'last_name' => 'required',
         ];
     }
 }

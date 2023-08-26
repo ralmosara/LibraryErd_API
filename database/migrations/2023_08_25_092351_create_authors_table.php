@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('authors', function (Blueprint $table) {
             $table->id();
-            $table->string('author');
+            $table->string('first_name');
+            $table->string('last_name');
             $table->softDeletes($column = 'deleted_at', $precision = 0);
             $table->timestamps();
         });
