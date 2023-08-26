@@ -20,6 +20,9 @@ class Fine extends Model
      * @var array
      */
     protected $fillable = [
-
+        'member_id',
+        'loan_id',
+        'fine_date',
+        'fine_amount'
     ];
 }

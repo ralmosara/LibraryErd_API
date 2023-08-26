@@ -7,6 +7,8 @@ use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+
 
 class Reservation extends Model
 {
@@ -20,6 +22,11 @@ class Reservation extends Model
      * @var array
      */
     protected $fillable = [
-
+        'book_id',
+        'member_id',
+        'payment_date',
+        'payment_amount'
     ];
+
+
 }

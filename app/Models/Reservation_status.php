@@ -20,6 +20,9 @@ class Reservation_status extends Model
      * @var array
      */
     protected $fillable = [
+        'status_value',
 
     ];
+
+    
 }

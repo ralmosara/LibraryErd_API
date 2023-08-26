@@ -20,6 +20,6 @@ class Member_status extends Model
      * @var array
      */
     protected $fillable = [
-
+        'status_value'
     ];
 }

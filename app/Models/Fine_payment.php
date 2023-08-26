@@ -20,6 +20,8 @@ class Fine_payment extends Model
      * @var array
      */
     protected $fillable = [
-
+        'member_id',
+        'payment_date',
+        'payment_amount'
     ];
 }

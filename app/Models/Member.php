@@ -20,6 +20,9 @@ class Member extends Model
      * @var array
      */
     protected $fillable = [
-
+        'first_name',
+        'last_name',
+        'joined_date',
+        'active_status_id'
     ];
 }
