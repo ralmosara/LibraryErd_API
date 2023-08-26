@@ -10,13 +10,12 @@ use App\Models\Fine_payment;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Request;
+use Essa\APIToolKit\Api\ApiResponse;
+
 
 class Fine_paymentController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware(['auth:api']);
-    }
+    use ApiResponse;
 
     public function index(): AnonymousResourceCollection 
     {

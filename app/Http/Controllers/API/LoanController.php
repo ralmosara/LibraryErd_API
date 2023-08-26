@@ -10,13 +10,12 @@ use App\Models\Loan;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Request;
+use Essa\APIToolKit\Api\ApiResponse;
+
 
 class LoanController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware(['auth:api']);
-    }
+    use ApiResponse;
 
     public function index(): AnonymousResourceCollection 
     {
